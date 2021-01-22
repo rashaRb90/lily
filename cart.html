@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cartStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" href="img/lilyVallylogo.jpg" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+
+            <div class="menu-bar">
+                <img src="img/Untitled-1.png" alt="">
+                <ul>
+                    <li><a href="home.html"> <i class="fa fa-home"></i> Home </a></li>
+                    <li><a href="shop.html"><i class="fa fa-shopping-bag"></i> Shop </a> </li>
+                    <li><a href="aboutus.html"><i class="fa fa-address-card"></i> About us </a>
+                    <li><a href="contact.html"><i class="fa fa-phone"> </i> Contact </a></li>
+                    <li>
+                        <form action="https://garden.org/plants/search/text/?"><i class="fas fa-search"></i>
+                            <div class="popup" onclick="myFunction()">
+                                <span class="popuptext" id="myPopup">Search Here for any Plant you want!</span>
+                            </div>
+                            <input class="popup" onclick="myFunction()" type="text" name="q"> 
+                        </form>    
+                    </li>
+                    <li><a href="cart.html"> <i class="fas fa-cart-plus"></i> cart</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id='background'>
+            <h1>Cart Page</h1>
+        </section>
+        <section id='table'>
+            <table id="cart-table">
+                <tr class="tr1">
+                    <th class="th1">Products</th>
+                    <th class="tr2">Price</th>
+                    <th class="th3">Quantity</th>
+
+                </tr>
+            </table>
+            <input class="submit" value="Checkout" type="submit" id='total-price'>
+        </section>
+        <section>
+
+            <div>
+
+                <form id="purchaseForm" target="goog.com">
+                    <fieldset>
+                        <legend>Please Add Your Information</legend>
+                        <label for="name">
+                            Name
+                        </label>
+                        <input id="name" name="name" type="text" placeholder="Full name" required>
+                        <label for="number" >
+                            Phone Number
+                        </label>
+                        <input id="number" name="phone" type="text" value="+962" required>
+                        <label for="email">
+                            Email
+                        </label>
+                        <input id="email" name="email" type="text" placeholder="username@mail.com" required>
+                        <label for="address">
+                            Address
+                        </label>
+                        <input id="address" name="address" type="text" placeholder="City / Street address / building No." required>
+                        <div>
+                        <label for="payment">Payment method:</label>
+                        <br>
+                        <br>
+                        <input id="Credit Card" name="payment"  type="radio" >
+                            <label for="Credit Card">Credit Card</label>
+                            <input id="Cash" name="payment" type="radio" checked>
+                            <label for="Cash">Cash</label>
+                        </div>
+                        <br>
+                        <input type="button" value="Place Order" id="myBtn">
+            </div>
+        </section>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Your order has been submitted !</h2>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <h3>Thank you for choosing our store</h3>
+      </div>
+    </div>
+  
+  </div>
+    </main>
+    <footer>
+        <div class="info">
+            <ul>
+                <li> <a href="aboutus.html"> ABOUT US </a> </li>
+                <li> <a href="contact.html">CONTACT US</a> </li>
+            </ul>
+        </div>
+        <img src="img/lilyVallylogo.jpg" alt="">
+
+        <div class="socialMedia">
+            <ul>
+                <li><a href="https://facebook.com"><i class="fab fa-facebook"> </i></li>
+                <li><a href="https://twitter.com"><i class="fab fa-twitter"> </i></li>
+                <li><a href="https://instagram.com"><i class="fab fa-instagram"> </i></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
